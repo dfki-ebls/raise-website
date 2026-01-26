@@ -1,0 +1,72 @@
+---
+title: Szenarien
+description: Geeignete Use Cases für RAG-Systeme identifizieren
+---
+
+import { Card, CardGrid, Aside, Steps } from "@astrojs/starlight/components";
+
+Nicht jeder Prozess eignet sich gleichermaßen für den Einsatz von RAG-Systemen.
+Die folgenden Kriterien helfen dabei, vielversprechende Anwendungsfälle im eigenen Unternehmen zu erkennen.
+
+## Was sind die wichtigen Kriterien?
+
+<CardGrid stagger>
+  <Card title="Prototypische Fragen" icon="magnifier">
+    Es gibt ein abgrenzbares Themenfeld, zu dem Fragen beantwortet werden sollen.
+  </Card>
+  <Card title="Dokumente verfügbar" icon="open-book">
+    Relevante Informationen liegen bereits in digitaler Form vor und sind zugänglich.
+  </Card>
+  <Card title="Antwortqualität messbar" icon="approve-check-circle">
+    Die Qualität der Antworten lässt sich anhand von Kriterien bewerten und verbessern.
+  </Card>
+</CardGrid>
+
+## Typische Einsatzbereiche
+
+- **Kundenservice**: Beantwortung von Produktfragen auf Basis vorhandener Dokumentationen.
+- **Wissensmanagement**: Zugriff auf internes Know-how und Erfahrungswissen.
+- **Angebotserstellung**: Nutzung früherer Projekte und Kalkulationen als Referenz.
+- **Compliance**: Auskünfte zu internen Richtlinien und gesetzlichen Anforderungen.
+- **Onboarding**: Unterstützung neuer Mitarbeitender beim Einarbeiten.
+
+## Leitfragen für Ihr Unternehmen
+
+Diese Fragen helfen, konkrete Einsatzmöglichkeiten zu identifizieren:
+
+<Steps>
+
+1. **Welche Fragen werden immer wieder gestellt?**
+
+   Denken Sie an Kundenanfragen, interne Rückfragen oder Supporttickets.
+
+2. **Wo suchen Mitarbeitende lange nach Informationen?**
+
+   Zeitaufwendige Recherche in Dokumenten oder Datenbanken deutet auf Potenzial hin.
+
+3. **Welches Wissen ist schwer zugänglich?**
+
+   Expertenwissen, das nur einzelne Personen haben, kann dokumentiert und verfügbar gemacht werden.
+
+4. **Welche Dokumente sind bereits digital vorhanden?**
+
+   Vorhandene Unterlagen bilden die Wissensbasis – je strukturierter, desto besser.
+
+5. **Wo ist Nachvollziehbarkeit wichtig?**
+
+   Bei Compliance, rechtlichen Fragen oder Qualitätssicherung sind quellenbasierte Antworten besonders wertvoll.
+
+</Steps>
+
+<Aside type="tip" title="Empfehlung">
+Starten Sie mit einem klar abgegrenzten Bereich und einer überschaubaren Dokumentenbasis.
+So lassen sich erste Erfahrungen sammeln und der Nutzen schnell bewerten.
+</Aside>
+
+## Weniger geeignete Szenarien
+
+RAG ist nicht für jede Aufgabe die richtige Lösung:
+
+- **Echtzeitdaten**: Anwendungen, die sekundenaktuelle Informationen erfordern, etwa Live-Börsenkurse oder Sensordaten.
+- **Rein kreative Aufgaben**: Freies Brainstorming oder Texte, die bewusst keine faktische Grundlage benötigen.
+- **Hochsensible Entscheidungen**: Bereiche, in denen automatisierte Antworten aus rechtlichen oder ethischen Gründen ungeeignet sind.

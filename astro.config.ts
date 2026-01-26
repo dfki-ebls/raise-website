@@ -34,6 +34,7 @@ export default defineConfig({
           label: "Home",
           link: "/",
         },
+        "szenarien",
         // {
         //   label: "Projekt",
         //   autogenerate: { directory: "project" },
