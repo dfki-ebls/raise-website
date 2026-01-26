@@ -35,10 +35,6 @@ export default defineConfig({
           link: "/",
         },
         "szenarien",
-        // {
-        //   label: "Projekt",
-        //   autogenerate: { directory: "project" },
-        // },
         {
           label: "Tools",
           items: [
