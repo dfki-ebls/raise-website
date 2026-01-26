@@ -25,13 +25,34 @@ export default defineConfig({
       pagefind: false,
       tableOfContents: false,
       defaultLocale: "de",
-      sidebar: [],
-      // [
-      //   {
-      //     label: "Projekt",
-      //     autogenerate: { directory: "project" },
-      //   },
-      // ],
+      pagination: false,
+      markdown: {
+        headingLinks: false,
+      },
+      sidebar: [
+        {
+          label: "Home",
+          link: "/",
+        },
+        // {
+        //   label: "Projekt",
+        //   autogenerate: { directory: "project" },
+        // },
+        {
+          label: "Tools",
+          items: [
+            {
+              label: "RAGold",
+              link: "https://ragold.raise.dfki.dev",
+              attrs: { target: "_blank" },
+            },
+          ],
+        },
+        {
+          label: "Rechtliches",
+          items: ["impressum", "datenschutz"],
+        },
+      ],
     }),
   ],
   vite: {

@@ -1,9 +1,9 @@
 ---
 title: Startseite
 description: Retrieval-Augmented Innovation and SME Enablement
-template: splash
+# template: splash
 hero:
-  title: RAISE-Projekt
+  title: RAISE
   tagline: KI-gestützte Wissensverarbeitung für den Mittelstand
   image:
     file: src/assets/logo.png
@@ -17,10 +17,29 @@ hero:
   #     variant: minimal
 ---
 
-import { Badge } from "@astrojs/starlight/components";
-import { Image } from 'astro:assets';
+import { Badge, Card, CardGrid } from "@astrojs/starlight/components";
+import ContactCard from "src/components/ContactCard.astro";
 import lenz from "src/assets/lenz.jpg";
 import grewenig from "src/assets/grewenig.jpg";
+
+## Highlights
+
+<CardGrid>
+  <Card title="Modulares RAG-Framework" icon="puzzle">
+    Generisches, auf KMU-Bedarfe zugeschnittenes Framework für Retrieval-Augmented-Generation-Systeme.
+  </Card>
+  <Card title="Automatisierte Datenerschließung" icon="document">
+    Erschließung unstrukturierter Unternehmensdaten aus Dokumenten, Berichten und technischen Unterlagen.
+  </Card>
+  <Card title="Praxisnahe KI-Anwendungen" icon="rocket">
+    Einsatz in Kundenservice, Wissensmanagement, Angebotserstellung und Compliance.
+  </Card>
+  <Card title="Automatisiertes Benchmarking" icon="setting">
+    Erfahrungsbasierte Identifikation und Optimierung geeigneter Systemkonfigurationen.
+  </Card>
+</CardGrid>
+
+## Beschreibung
 
 Künstliche Intelligenz bietet kleinen und mittleren Unternehmen (KMU) große Chancen, ihre Prozesse effizienter zu gestalten und neue digitale Services zu entwickeln.
 In der Praxis scheitert der Einsatz moderner KI-Technologien jedoch häufig an hohen technischen Einstiegshürden, fehlender Expertise oder mangelnder Transparenz der Systeme.
@@ -35,23 +54,7 @@ Ein erfahrungsbasierter Ansatz sowie ein automatisiertes Benchmarking helfen dab
 
 ## Ansprechpartner
 
-<div class="not-content grid grid-cols-2 gap-12">
-  <div class="flex items-center gap-6 bg-[var(--sl-color-gray-6)] p-6 rounded-xl">
-    <div class="flex-1">
-      <p class="text-xl font-semibold mb-2">Dr. Lisa Grewenig</p>
-      <p class="mt-2">
-        <a href="mailto:lisa.grewenig@dfki.de">lisa.grewenig@dfki.de</a>
-      </p>
-    </div>
-    <Image src={grewenig} alt="Foto von Lisa Grewenig" class="w-[120px] h-[120px] rounded-full object-cover" loading="eager" />
-  </div>
-  <div class="flex items-center gap-6 bg-[var(--sl-color-gray-6)] p-6 rounded-xl">
-    <div class="flex-1">
-      <p class="text-xl font-semibold mb-2">Mirko Lenz</p>
-      <p class="mt-2">
-        <a href="mailto:mirko.lenz@dfki.de">mirko.lenz@dfki.de</a>
-      </p>
-    </div>
-    <Image src={lenz} alt="Foto von Mirko Lenz" class="w-[120px] h-[120px] rounded-full object-cover" loading="eager" />
-  </div>
+<div class="not-content grid grid-cols-1 lg:grid-cols-2 gap-12">
+  <ContactCard name="Dr. Lisa Grewenig" email="lisa.grewenig@dfki.de" image={grewenig} />
+  <ContactCard name="Mirko Lenz" email="mirko.lenz@dfki.de" image={lenz} />
 </div>
