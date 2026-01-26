@@ -1,0 +1,56 @@
+---
+title: Startseite
+description: Retrieval-Augmented Innovation and SME Enablement
+template: splash
+hero:
+  title: RAISE-Projekt
+  tagline: KI-gestützte Wissensverarbeitung für den Mittelstand
+  image:
+    file: src/assets/logo.png
+  # actions:
+  #   - text: Example Guide
+  #     link: /guides/example/
+  #     icon: right-arrow
+  #   - text: Read the Starlight docs
+  #     link: https://starlight.astro.build
+  #     icon: external
+  #     variant: minimal
+---
+
+import { Badge } from "@astrojs/starlight/components";
+import lenz from "src/assets/lenz.jpg";
+import grewenig from "src/assets/grewenig.jpg";
+
+Künstliche Intelligenz bietet kleinen und mittleren Unternehmen (KMU) große Chancen, ihre Prozesse effizienter zu gestalten und neue digitale Services zu entwickeln.
+In der Praxis scheitert der Einsatz moderner KI-Technologien jedoch häufig an hohen technischen Einstiegshürden, fehlender Expertise oder mangelnder Transparenz der Systeme.
+
+Hier setzt das EFRE-geförderte Forschungsprojekt RAISE (Retrieval-Augmented Innovation and SME Enablement) an, das seit dem 1. Januar 2026 läuft.
+Ziel des Projekts ist die Entwicklung eines generischen, modularen Frameworks für Retrieval-Augmented-Generation-(RAG)-Systeme, das speziell auf die Bedarfe von KMU zugeschnitten ist.
+RAG-Systeme kombinieren große Sprachmodelle mit dem gezielten Zugriff auf vertrauenswürdige Unternehmensdokumente und ermöglichen so faktenbasierte, nachvollziehbare KI-Anwendungen – ohne aufwendiges Training eigener Modelle.
+
+Im Mittelpunkt von RAISE steht die automatisierte Erschließung unstrukturierter Unternehmensdaten, etwa aus Dokumenten, Berichten oder technischen Unterlagen.
+Dadurch werden praxisnahe KI-Anwendungen in Bereichen wie Kundenservice, Wissensmanagement, Angebotserstellung oder Compliance möglich.
+Ein erfahrungsbasierter Ansatz sowie ein automatisiertes Benchmarking helfen dabei, für unterschiedliche Anwendungsfälle geeignete Systemkonfigurationen zu identifizieren und kontinuierlich zu optimieren.
+
+## Ansprechpartner
+
+<div class="not-content grid grid-cols-2 gap-12">
+  <div class="flex items-center gap-6 bg-[var(--sl-color-gray-6)] p-6 rounded-xl">
+    <div class="flex-1">
+      <p class="text-xl font-semibold mb-2">Dr. Lisa Grewenig</p>
+      <p class="mt-2">
+        <a href="mailto:lisa.grewenig@dfki.de">lisa.grewenig@dfki.de</a>
+      </p>
+    </div>
+    <img src={grewenig.src} alt="Foto von Lisa Grewenig" class="w-[120px] h-[120px] rounded-full object-cover" />
+  </div>
+  <div class="flex items-center gap-6 bg-[var(--sl-color-gray-6)] p-6 rounded-xl">
+    <div class="flex-1">
+      <p class="text-xl font-semibold mb-2">Mirko Lenz</p>
+      <p class="mt-2">
+        <a href="mailto:mirko.lenz@dfki.de">mirko.lenz@dfki.de</a>
+      </p>
+    </div>
+    <img src={lenz.src} alt="Foto von Mirko Lenz" class="w-[120px] h-[120px] rounded-full object-cover" />
+  </div>
+</div>
