@@ -34,7 +34,7 @@ export default defineConfig({
           label: "Home",
           link: "/",
         },
-        "szenarien",
+        "use-cases",
         {
           label: "Tools",
           items: [
@@ -47,7 +47,7 @@ export default defineConfig({
         },
         {
           label: "Rechtliches",
-          items: ["impressum", "datenschutz"],
+          items: ["imprint", "privacy"],
         },
       ],
     }),
