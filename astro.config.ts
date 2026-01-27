@@ -31,12 +31,12 @@ export default defineConfig({
       },
       sidebar: [
         {
-          label: "Home",
+          label: "Startseite",
           link: "/",
         },
         "use-cases",
         {
-          label: "Tools",
+          label: "Software",
           items: [
             {
               label: "RAGold",
