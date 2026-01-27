@@ -7,6 +7,7 @@ import { Card, CardGrid, Aside, Steps } from "@astrojs/starlight/components";
 
 Nicht jeder Prozess eignet sich gleichermaßen für den Einsatz von RAG-Systemen.
 Die folgenden Kriterien helfen dabei, vielversprechende Anwendungsfälle im eigenen Unternehmen zu erkennen.
+Gerade für KMU mit begrenzten Ressourcen ist ein klar abgegrenzter Einstieg entscheidend.
 
 ## Was sind die wichtigen Kriterien?
 
@@ -15,10 +16,10 @@ Die folgenden Kriterien helfen dabei, vielversprechende Anwendungsfälle im eige
     Es gibt ein abgrenzbares Themenfeld, zu dem Fragen beantwortet werden sollen.
   </Card>
   <Card title="Dokumente verfügbar" icon="open-book">
-    Relevante Informationen liegen bereits in digitaler Form vor und sind zugänglich.
+    Relevante Informationen liegen digital vor, auch wenn sie unstrukturiert sind.
   </Card>
-  <Card title="Antwortqualität messbar" icon="approve-check-circle">
-    Die Qualität der Antworten lässt sich anhand von Kriterien bewerten und verbessern.
+  <Card title="Nachvollziehbare Antworten" icon="approve-check-circle">
+    Quellen müssen benennbar sein, damit Antworten überprüfbar und vertrauenswürdig sind.
   </Card>
 </CardGrid>
 
@@ -50,11 +51,15 @@ Diese Fragen helfen, konkrete Einsatzmöglichkeiten zu identifizieren:
 
 4. **Welche Dokumente sind bereits digital vorhanden?**
 
-   Vorhandene Unterlagen bilden die Wissensbasis – je strukturierter, desto besser.
+   Vorhandene Unterlagen bilden die Wissensbasis, und unstrukturierte PDFs sind ein typischer Startpunkt.
 
 5. **Wo ist Nachvollziehbarkeit wichtig?**
 
    Bei Compliance, rechtlichen Fragen oder Qualitätssicherung sind quellenbasierte Antworten besonders wertvoll.
+
+6. **Wie lässt sich Qualität messen?**
+
+   Definieren Sie Kriterien und Tests, damit Antworten kontinuierlich verbessert werden können.
 
 </Steps>
 
@@ -70,3 +75,4 @@ RAG ist nicht für jede Aufgabe die richtige Lösung:
 - **Echtzeitdaten**: Anwendungen, die sekundenaktuelle Informationen erfordern, etwa Live-Börsenkurse oder Sensordaten.
 - **Rein kreative Aufgaben**: Freies Brainstorming oder Texte, die bewusst keine faktische Grundlage benötigen.
 - **Hochsensible Entscheidungen**: Bereiche, in denen automatisierte Antworten aus rechtlichen oder ethischen Gründen ungeeignet sind.
+- **Fehlende Wissensbasis**: Prozesse ohne digitale Dokumente oder belastbare Quellen.
