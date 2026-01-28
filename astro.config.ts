@@ -13,7 +13,7 @@ export default defineConfig({
         src: "./src/assets/logo.png",
         alt: "RAISE Logo",
       },
-      favicon: "./src/assets/logo.png",
+      favicon: "/logo.svg",
       social: [
         {
           icon: "github",
