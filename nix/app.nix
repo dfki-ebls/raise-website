@@ -2,7 +2,6 @@
   buildNpmPackage,
   importNpmLock,
   lib,
-  biome,
 }:
 buildNpmPackage (finalAttrs: {
   inherit (finalAttrs.npmDeps) pname version;
@@ -17,8 +16,6 @@ buildNpmPackage (finalAttrs: {
 
     runHook postInstall
   '';
-
-  BIOME_BINARY = lib.getExe biome;
 
   meta = with lib; {
     license = licenses.mit;
