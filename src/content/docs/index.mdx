@@ -18,7 +18,10 @@ hero:
 ---
 
 import { Badge, Card, CardGrid } from "@astrojs/starlight/components";
+import { Image } from "astro:assets";
 import ContactCard from "src/components/ContactCard.astro";
+import euLogo from "src/assets/eu-wide.svg";
+import rlpLogo from "src/assets/rlp-wide.svg";
 import lenz from "src/assets/lenz.jpg";
 import grewenig from "src/assets/grewenig.jpg";
 
@@ -54,9 +57,24 @@ Im Mittelpunkt von RAISE steht die automatisierte Erschließung unstrukturierter
 Dadurch werden praxisnahe KI-Anwendungen in Bereichen wie Kundenservice, Wissensmanagement, Angebotserstellung oder Compliance möglich.
 Ein erfahrungsbasierter Ansatz sowie ein automatisiertes Benchmarking helfen dabei, für unterschiedliche Anwendungsfälle geeignete Systemkonfigurationen zu identifizieren und kontinuierlich zu optimieren.
 
+## Förderung
+
+<div class="not-content grid grid-cols-1 lg:grid-cols-2 gap-8">
+  <Image
+    src={euLogo}
+    alt="Kofinanziert von der Europäische Union"
+    class="max-h-28 max-w-full rounded-lg bg-gray-100 object-contain p-4"
+  />
+  <Image
+    src={rlpLogo}
+    alt="Kofinanziert vom Land Rheinland-Pfalz"
+    class="max-h-28 max-w-full rounded-lg bg-gray-100 object-contain p-4"
+  />
+</div>
+
 ## Ansprechpartner
 
-<div class="not-content grid grid-cols-1 lg:grid-cols-2 gap-12">
+<div class="not-content grid grid-cols-1 lg:grid-cols-2 gap-8">
   <ContactCard name="Dr. Lisa Grewenig" email="lisa.grewenig@dfki.de" image={grewenig} />
   <ContactCard name="Mirko Lenz" email="mirko.lenz@dfki.de" image={lenz} />
 </div>
