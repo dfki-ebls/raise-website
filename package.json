@@ -19,6 +19,7 @@
   "devDependencies": {
     "@astrojs/check": "^0.9",
     "@types/node": "^25",
-    "typescript": "^6"
+    "typescript": "^6",
+    "vite": "^7"
   }
 }
