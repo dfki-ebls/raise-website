@@ -36,11 +36,41 @@ export default defineConfig({
         },
         "use-cases",
         {
-          label: "Software",
+          label: "Demonstratoren",
           items: [
+            {
+              label: "Hivegent",
+              link: "https://hivegent.raise.dfki.dev",
+              attrs: { target: "_blank" },
+            },
             {
               label: "RAGold",
               link: "https://ragold.raise.dfki.dev",
+              attrs: { target: "_blank" },
+            },
+            {
+              label: "Single Sign-On",
+              link: "https://sso.raise.dfki.dev",
+              attrs: { target: "_blank" },
+            },
+          ],
+        },
+        {
+          label: "Open Source",
+          items: [
+            {
+              label: "Hivegent",
+              link: "https://github.com/dfki-ebls/hivegent",
+              attrs: { target: "_blank" },
+            },
+            {
+              label: "RAGold",
+              link: "https://github.com/dfki-ebls/ragold",
+              attrs: { target: "_blank" },
+            },
+            {
+              label: "Infrastruktur",
+              link: "https://github.com/dfki-ebls/raise-infra",
               attrs: { target: "_blank" },
             },
           ],
