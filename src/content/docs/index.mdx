@@ -6,7 +6,7 @@ hero:
   title: RAISE
   tagline: KI-gestützte Wissensverarbeitung für den Mittelstand
   image:
-    file: src/assets/logo.png
+    file: "@/assets/logo.png"
   # actions:
   #   - text: Example Guide
   #     link: /guides/example/
@@ -19,11 +19,11 @@ hero:
 
 import { Badge, Card, CardGrid } from "@astrojs/starlight/components";
 import { Image } from "astro:assets";
-import ContactCard from "src/components/ContactCard.astro";
-import euLogo from "src/assets/eu-wide.svg";
-import rlpLogo from "src/assets/rlp-wide.svg";
-import lenz from "src/assets/lenz.jpg";
-import grewenig from "src/assets/grewenig.jpg";
+import ContactCard from "@/components/ContactCard.astro";
+import euLogo from "@/assets/eu-wide.svg";
+import rlpLogo from "@/assets/rlp-wide.svg";
+import lenz from "@/assets/lenz.jpg";
+import grewenig from "@/assets/grewenig.jpg";
 
 <CardGrid>
   <Card title="Modulares RAG-Framework" icon="puzzle">

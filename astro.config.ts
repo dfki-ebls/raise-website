@@ -10,7 +10,7 @@ export default defineConfig({
       title: "RAISE",
       description: "Retrieval-Augmented Innovation and SME Enablement",
       logo: {
-        src: "./src/assets/logo.png",
+        src: "@/assets/logo.png",
         alt: "RAISE Logo",
       },
       favicon: "/logo.svg",
